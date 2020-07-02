@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 
 @app.route('/<name>')
+@app.route('/',defaults={'name':'zyh'})
 def index(name):
     return '<h1>Hello,%s Flask!</h>'%name
 
@@ -12,7 +13,7 @@ def index(name):
 
 #print(app.name)
 
-
+"hhhhh"
 #app.run()
 
 
